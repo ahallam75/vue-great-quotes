@@ -20,7 +20,10 @@ export default {
     };
   },
   methods: {
-    createNew() {}
+    createNew() {
+      this.$emit("quoteAdded", this.quote);
+      this.quote = "";
+    }
   }
 };
 </script>
